@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		7ADC6913204C77CB001587F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC6912204C77CB001587F5 /* AppDelegate.swift */; };
-		7ADC6915204C77CB001587F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC6914204C77CB001587F5 /* ViewController.swift */; };
 		7ADC6918204C77CB001587F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADC6916204C77CB001587F5 /* Main.storyboard */; };
 		7ADC691B204C77CB001587F5 /* Talkboy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC6919204C77CB001587F5 /* Talkboy.xcdatamodeld */; };
 		7ADC691D204C77CB001587F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ADC691C204C77CB001587F5 /* Assets.xcassets */; };
 		7ADC6920204C77CB001587F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADC691E204C77CB001587F5 /* LaunchScreen.storyboard */; };
+		7ADC6928204C78B1001587F5 /* TalkboyRecordingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC6927204C78B1001587F5 /* TalkboyRecordingsTableViewController.swift */; };
+		7ADC692A204C793D001587F5 /* RecordingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC6929204C793D001587F5 /* RecordingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7ADC690F204C77CB001587F5 /* Talkboy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talkboy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ADC6912204C77CB001587F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7ADC6914204C77CB001587F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7ADC6917204C77CB001587F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7ADC691A204C77CB001587F5 /* Talkboy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Talkboy.xcdatamodel; sourceTree = "<group>"; };
 		7ADC691C204C77CB001587F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ADC691F204C77CB001587F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ADC6921204C77CB001587F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ADC6927204C78B1001587F5 /* TalkboyRecordingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkboyRecordingsTableViewController.swift; sourceTree = "<group>"; };
+		7ADC6929204C793D001587F5 /* RecordingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				7ADC6912204C77CB001587F5 /* AppDelegate.swift */,
-				7ADC6914204C77CB001587F5 /* ViewController.swift */,
+				7ADC6927204C78B1001587F5 /* TalkboyRecordingsTableViewController.swift */,
+				7ADC6929204C793D001587F5 /* RecordingsViewController.swift */,
 				7ADC6916204C77CB001587F5 /* Main.storyboard */,
 				7ADC691C204C77CB001587F5 /* Assets.xcassets */,
 				7ADC691E204C77CB001587F5 /* LaunchScreen.storyboard */,
@@ -139,9 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADC692A204C793D001587F5 /* RecordingsViewController.swift in Sources */,
 				7ADC691B204C77CB001587F5 /* Talkboy.xcdatamodeld in Sources */,
-				7ADC6915204C77CB001587F5 /* ViewController.swift in Sources */,
 				7ADC6913204C77CB001587F5 /* AppDelegate.swift in Sources */,
+				7ADC6928204C78B1001587F5 /* TalkboyRecordingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +284,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Talkboy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lerner.Talkboy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Talkboy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lerner.Talkboy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
